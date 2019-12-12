@@ -45,6 +45,7 @@ dependencies {
     def androidx_test_espresso = "3.1.0"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$androidx_test_espresso"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$androidx_test_espresso"
 
     // androidx.test
     def androidx_test = "1.1.0"
@@ -53,7 +54,7 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit-ktx:$androidx_test"
 
     // androidx.fragment
-    def fragment_version = "1.2.0-rc01" // must use for new factory stuff
+    def fragment_version = "1.2.0-rc03" // must use for new factory stuff
     debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
     implementation "androidx.fragment:fragment:$fragment_version"
 
