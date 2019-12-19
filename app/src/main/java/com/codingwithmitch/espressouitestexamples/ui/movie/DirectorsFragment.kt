@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.codingwithmitch.espressouitestexamples.R
 import kotlinx.android.synthetic.main.fragment_directors.*
+import java.lang.StringBuilder
 
 class DirectorsFragment : Fragment(){
 
@@ -47,21 +48,5 @@ class DirectorsFragment : Fragment(){
             return sb.toString()
         }
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
