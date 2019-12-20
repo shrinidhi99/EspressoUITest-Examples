@@ -1,4 +1,4 @@
-package com.codingwithmitch.espressouitestexamples.data
+package espressouitestexamples.data
 
 data class Movie (
     val id: Int,

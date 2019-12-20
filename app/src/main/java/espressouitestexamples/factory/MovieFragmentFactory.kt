@@ -1,12 +1,12 @@
-package com.codingwithmitch.espressouitestexamples.factory
+package espressouitestexamples.factory
 
 import androidx.fragment.app.FragmentFactory
 import com.bumptech.glide.request.RequestOptions
-import com.codingwithmitch.espressouitestexamples.data.source.MoviesDataSource
-import com.codingwithmitch.espressouitestexamples.ui.movie.DirectorsFragment
-import com.codingwithmitch.espressouitestexamples.ui.movie.MovieDetailFragment
-import com.codingwithmitch.espressouitestexamples.ui.movie.MovieListFragment
-import com.codingwithmitch.espressouitestexamples.ui.movie.StarActorsFragment
+import espressouitestexamples.data.source.MoviesDataSource
+import espressouitestexamples.ui.movie.DirectorsFragment
+import espressouitestexamples.ui.movie.MovieDetailFragment
+import espressouitestexamples.ui.movie.MovieListFragment
+import espressouitestexamples.ui.movie.StarActorsFragment
 
 class MovieFragmentFactory(
     private val requestOptions: RequestOptions? = null,

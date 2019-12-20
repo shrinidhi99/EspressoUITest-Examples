@@ -1,7 +1,11 @@
-package com.codingwithmitch.espressouitestexamples.data
+package espressouitestexamples.data
+
+import espressouitestexamples.data.Movie
 
 
 object FakeMovieData {
+
+    const val FAKE_NETWORK_DELAY = 1000L
 
     val movies = arrayOf(
         Movie(

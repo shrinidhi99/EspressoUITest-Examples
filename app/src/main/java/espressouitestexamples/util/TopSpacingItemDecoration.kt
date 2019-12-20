@@ -1,4 +1,4 @@
-package com.codingwithmitch.espressouitestexamples.util
+package espressouitestexamples.util
 
 import android.graphics.Rect
 import android.view.View
