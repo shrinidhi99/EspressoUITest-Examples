@@ -13,6 +13,7 @@ import com.codingwithmitch.espressouitestexamples.R
 import espressouitestexamples.data.FakeMovieData
 import espressouitestexamples.ui.movie.MoviesListAdapter.*
 import espressouitestexamples.util.EspressoIdlingResource
+import espressouitestexamples.util.EspressoIdlingResourceRule
 import org.hamcrest.CoreMatchers.not
 import org.junit.*
 import org.junit.runner.RunWith
@@ -29,15 +30,18 @@ class MovieListFragmentTest {
     @get:Rule
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
 
-    @Before
-    fun registerIdlingResource() {
-        IdlingRegistry.getInstance().register(EspressoIdlingResource.countingIdlingResource)
-    }
+    @get: Rule
+    val espressoIdlingResourceRule = EspressoIdlingResourceRule()
 
-    @After
-    fun unregisterIdlingResource() {
-        IdlingRegistry.getInstance().unregister(EspressoIdlingResource.countingIdlingResource)
-    }
+//    @Before
+//    fun registerIdlingResource() {
+//        IdlingRegistry.getInstance().register(EspressoIdlingResource.countingIdlingResource)
+//    }
+//
+//    @After
+//    fun unregisterIdlingResource() {
+//        IdlingRegistry.getInstance().unregister(EspressoIdlingResource.countingIdlingResource)
+//    }
 
     @Test
     fun a_test_isListFragmentVisible_onAppLaunch() {
